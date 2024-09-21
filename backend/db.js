@@ -7,27 +7,27 @@ moongoose.connect("mongodb+srv://admin:Rgu%402005@paytm.o0v6w.mongodb.net/")
 
 const userSchema = new moongoose.Schema({
     username : {   
-        type : string,
+        type : String,
         required : true,
         unique : true,
         trim : true,
         lowercase : true,
-        minLength : 3,
+        minLength: 3,
         maxLength : 30
     },
     password :{
-        type : string,
+        type : String,
         required : true,
         minLength : 6
     },
     firstName :{
-        type : string,
+        type : String,
         required : true,
         trim : true,
         maxLength : 50
     },
     lastName :{
-        type : string,
+        type : String,
         required : true,
         trim : true,
         maxLength : 50
